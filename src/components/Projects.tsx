@@ -351,13 +351,14 @@ const Projects = () => {
         </div>
 
         {error && (
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-8 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 dark:border-yellow-500 p-4 rounded-lg max-w-3xl mx-auto"
-          >
-            <p className="text-yellow-700 dark:text-yellow-400">{error}</p>
-          </motion.div>
+          // <motion.div 
+          //   initial={{ opacity: 0, y: -20 }}
+          //   animate={{ opacity: 1, y: 0 }}
+          //   className="mb-8 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-400 dark:border-yellow-500 p-4 rounded-lg max-w-3xl mx-auto"
+          // >
+          //   <p className="text-yellow-700 dark:text-yellow-400">{error}</p>
+          // </motion.div>
+          <div></div>
         )}
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
