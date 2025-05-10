@@ -68,7 +68,7 @@ const Hero = () => {
                 View My Work
               </a>
               <a 
-                href={EricCv} download 
+                href='#contact'
                 className="px-8 py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-blue-600 dark:text-blue-400 font-medium rounded-lg border border-blue-600 dark:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 flex items-center justify-center gap-2"
               >
                 <Mail size={18} /> Contact Me
