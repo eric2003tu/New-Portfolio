@@ -104,9 +104,13 @@ const Contact :React.FC= () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+  const api = window.location.hostname === 'localhost'
+  ? 'http://localhost:2000/api/send'
+  : 'https://backend-qnfm.onrender.com/api/send';
+
     
     try {
-      const response = await fetch("https://backend-qnfm.onrender.com/api/send", {
+      const response = await fetch(`${api}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
