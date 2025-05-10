@@ -1,5 +1,7 @@
 import { ArrowDown, Mail, Phone, MapPin, Github, Link as LinkIcon } from 'lucide-react';
 import profile from '../assets/Eric.png'
+import { FaDownload } from "react-icons/fa";
+import EricCv from '../assets/EricCv.pdf'
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -66,38 +68,20 @@ const Hero = () => {
                 View My Work
               </a>
               <a 
-                href="#contact" 
+                href={EricCv} download 
                 className="px-8 py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-blue-600 dark:text-blue-400 font-medium rounded-lg border border-blue-600 dark:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 flex items-center justify-center gap-2"
               >
                 <Mail size={18} /> Contact Me
               </a>
+              <a 
+                href={EricCv} download 
+                className="px-8 py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-blue-600 dark:text-blue-400 font-medium rounded-lg border border-blue-600 dark:border-blue-400 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-50 flex items-center justify-center gap-2"
+              >
+                <FaDownload  size={18} /> Download CV
+              </a>
             </div>
 
             {/* Contact info */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto lg:mx-0">
-              <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                <Mail size={18} className="text-blue-600 dark:text-blue-400" />
-                <a href="mailto:erictuyishime574@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  erictuyishime574@gmail.com
-                </a>
-              </div>
-              <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                <Phone size={18} className="text-blue-600 dark:text-blue-400" />
-                <a href="tel:+250783687408" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  +250 783 687 408
-                </a>
-              </div>
-              <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                <MapPin size={18} className="text-blue-600 dark:text-blue-400" />
-                <span>Kigali, Rwanda</span>
-              </div>
-              <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
-                <Github size={18} className="text-blue-600 dark:text-blue-400" />
-                <a href="https://github.com/eric2003tu" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  github.com/eric2003tu
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Profile image placeholder */}

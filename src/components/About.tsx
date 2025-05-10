@@ -45,11 +45,12 @@ const About = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white">
-                    Bachelor's Degree
+                    Doing Bachelor's Degree
                   </h4>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Computer Science from University at Buffalo
-                  </p>
+  Computer Science from <a href="https://www.ur.ac.rw" target="_blank" rel="noopener noreferrer" className="text-blue-500">University of Rwanda</a>
+</p>
+
                 </div>
               </div>
               
