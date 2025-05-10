@@ -152,7 +152,7 @@ const Contact :React.FC= () => {
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl mb-4">
             Get In Touch
           </h2>
-          <p className="max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-300">
+          <p className="max-w-2xl mx-auto text-lg text-gray-200 dark:text-gray-300">
             Have a project in mind or want to chat? Feel free to contact me!
           </p>
         </div>
@@ -163,7 +163,7 @@ const Contact :React.FC= () => {
               Send Me a Message
             </h3>
             <form onSubmit={handleSubmit} className="lg:col-span-2">
-              <p className="mb-6 text-gray-600">
+              <p className="mb-6 text-gray-200">
                 Fill this form to contact me. and remember that <strong className="text-red-500">*</strong> means required.
               </p>
               <div className="form-group mb-4">
