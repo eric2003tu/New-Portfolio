@@ -31,7 +31,7 @@ const Footer = () => {
             </a>
           </div>
           <p className="text-gray-500 dark:text-gray-400 text-sm">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Eric TUYISHIME. All rights reserved.
           </p>
         </div>
       </div>
